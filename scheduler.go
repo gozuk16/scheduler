@@ -89,6 +89,8 @@ func procStart(path string) {
 	// Todo: validate path
 	openJobConf(path)
 
+	// 構造体に起動ファイル情報を入れる
+
 	// proc start
 	out, err := exec.Command("ls", "bbb").CombinedOutput()
 	if err != nil {
